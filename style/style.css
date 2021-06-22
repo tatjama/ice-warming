@@ -109,7 +109,7 @@ body{
 .toggle{
     width: 60px;
     height: 60px;
-    background-image: url(./images/hamburger.svg);
+    background-image: url(../images/hamburger.svg);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -117,7 +117,7 @@ body{
     cursor: pointer;
 }
 .toggle.active{
-    background-image: url(./images/icon-close.svg);
+    background-image: url(../images/icon-close.svg);
     background-size: 20px;
 }
 video{
