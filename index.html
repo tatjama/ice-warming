@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <title>Ice warming Video landing page</title>
+</head>
+<body>
+    <section class="showcase"> 
+       
+        
+        <video src="./video/kayak.mp4" autoPlay loop muted></video>
+        <div class="overlay"></div>
+       
+    </section>
+    <div class="sphere">
+        <video src="./video/kayak.mp4" autoPlay loop muted></video>
+    </div>
+    <div class="container">
+        <header>
+            <h2 class="logo">Ice Warming</h2>
+            <div class="toggle ">
+
+            </div>
+        </header>
+        <div class="text">
+            <h2>Never stop</h2>
+            <h3>Enjoying the ice</h3>
+           
+            <a href="#">Enjoy</a>
+            
+        </div>        
+        <ul class="social">
+            <li><a href="#"><img src="./images/008-twitter.png" alt="twitter"/></a></li>
+            <li><a href="#"><img src="./images/facebook-1.png" alt="facebook"/></a></li>
+            <li><a href="#"><img src="./images/instagram-2.png" alt="instagram"/></a></li>
+            <li><a href="#"><img src="./images/linkedin-1.png" alt="linkedin"/></a></li>
+        </ul>
+
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Ice sports</a></li>
+            <!--<li><a href="#">Destinations</a></li>-->
+            <li><a href="#">E-shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    const showcase = document.querySelector('.showcase');
+    const toggle = document.querySelector('.toggle');
+    const container = document.querySelector('.container');
+    const sphere = document.querySelector('.sphere');
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+        container.classList.toggle('active')
+        sphere.classList.toggle('active')
+    })
+
+    </script>
+</body>
+</html>
