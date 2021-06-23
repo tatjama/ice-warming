@@ -233,10 +233,11 @@ header{
     flex-direction: row;
     justify-content: space-between;
 }
-button.e-shop__button{
+a.e-shop__button{
     width: 100px;
     height: 100px;
     cursor: pointer;
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     background-image: linear-gradient(to bottom right,rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.1)40%);
     outline: none;
@@ -256,7 +257,7 @@ button.e-shop__button{
     -ms-transition:transform .2s;
     -o-transition:transform .2s;
 }
-button.e-shop__button:hover{
+a.e-shop__button:hover{
     transform:scale(0.7);
     filter: drop-shadow(rgba(255,255,255,0.5) 1px 1px 1px);
     -webkit-transform:scale(0.7);
@@ -445,12 +446,13 @@ button.e-shop__button:hover{
     .e-shop{
         padding: 10px 0px;
     }
-    button.e-shop__button{
+    a.e-shop__button{
         width: 70px;
-        height: 70px;        
+        height: 70px; 
+        padding: 5px;       
     }
     .e-shop__img{
-        width: 70%;
+        width: 90%;
         object-fit: contain;
         filter:drop-shadow(var(--text-color_dark) 2px 2px 2px);
         -webkit-filter:drop-shadow(var(--text-color_dark) 2px 2px 2px);
@@ -505,7 +507,7 @@ button.e-shop__button:hover{
  .description{
      width: 100%;
  }
- button.e-shop__button{
+ a.e-shop__button{
     width: 60px;
     height: 60px;
     border-radius: 15px;
@@ -515,7 +517,7 @@ button.e-shop__button:hover{
     -o-border-radius: 15px;
 }
 .e-shop__img{
-    width: 60%;
+    width: 80%;
 }
 }
 @media screen and (max-width: 568px){
