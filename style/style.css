@@ -12,6 +12,9 @@
 body{
     overflow: hidden;
 }
+a{
+    text-decoration: none;
+}
 .showcase{
     position: absolute;
     right: 0;
