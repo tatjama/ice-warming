@@ -573,7 +573,7 @@ a.e-shop__button:hover{
 }
 /*List of items*/
 .items__item{
-    padding: 10px 20px;
+    padding: 10px ;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -581,7 +581,7 @@ a.e-shop__button:hover{
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255,255,255, 1));
     opacity: 0.9;
     margin: 10px 0px;
-    filter:drop-shadow(var(--text-color_light) 5px 5px 5px);
+    filter:drop-shadow(var(--text-color_light) 3px 3px 3px);
     border-top: 5px solid rgba(255,255,255,0.4);
     border-left: 5px solid rgba(255,255,255,0.4);
     border-radius: 30px;
@@ -589,7 +589,7 @@ a.e-shop__button:hover{
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    -webkit-filter:drop-shadow(var(--text-color_light) 5px 5px 5px);
+    -webkit-filter:drop-shadow(var(--text-color_light) 3px 3px 3px);
 }
 .items__img{
     width: 70px;
@@ -763,6 +763,9 @@ a.e-shop__button:hover{
     }
 }
 @media screen and (max-width: 650px){
+ .logo{
+     font-size:1rem;
+ }   
  .glass-layer{
      flex-direction: column;
  }   
@@ -796,7 +799,7 @@ a.e-shop__button:hover{
 }
 .menu__platforms{
     position: absolute;
-    top: 135px;
+    top: 98px;
     display: flex;
 }
 .menu__platform{
@@ -805,5 +808,6 @@ a.e-shop__button:hover{
 }
 .description{
     padding: 40px 15px 10px 10px;
-}
+}  
+
 }
