@@ -186,8 +186,11 @@ header{
 }
   .product-img {
     display: block;
-    width: 100%;
+    width: 97%;
     height: 8rem;
+    box-shadow:5px 15px 5px 10px white;
+    
+    border-bottom: 3px solid rgba(255,255,255,0.4);
     border-radius: 10px;
     transition: var(--mainTransition);
     -webkit-transition: var(--mainTransition);
