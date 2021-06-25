@@ -91,6 +91,14 @@ header{
     text-transform: capitalize;
     letter-spacing: var(--mainSpacing);
   }
+  .shop-container{
+    width: 75%;
+    height: 80vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+}
   .products-center {
     width: 90vw;
     margin: 0 auto;
@@ -129,7 +137,7 @@ header{
     -o-transition: var(--mainTransition);
 }
   .bag-btn:hover {
-    color: var(--mainWhite);
+    color: white;
   }
   .fa-shopping-cart {
     margin-right: 0.5rem;
@@ -186,7 +194,7 @@ header{
     height: 100%;
     transition: var(--mainTransition);
     background: rgba(34, 174, 201, 0.2);
-    z-index: 2;
+    z-index: 60;
     visibility: hidden;
     -webkit-transition: var(--mainTransition);
     -moz-transition: var(--mainTransition);
@@ -214,7 +222,7 @@ header{
     -moz-transition: var(--mainTransition);
     -ms-transition: var(--mainTransition);
     -o-transition: var(--mainTransition);
-  }
+}
   .showCart {
     transform: translateX(0);
     -webkit-transform: translateX(0);
@@ -571,12 +579,11 @@ a.e-shop__button:hover{
     color: var(--text-color_light);
     font-size: small;
 }
+
 /*List of items*/
 .items__item{
     padding: 10px ;
     display: flex;
-    flex-direction:column;
-    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.5);
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255,255,255, 1));
     opacity: 0.9;
@@ -590,6 +597,10 @@ a.e-shop__button:hover{
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     -webkit-filter:drop-shadow(var(--text-color_light) 3px 3px 3px);
+}
+.product.items__item{    
+    flex-direction:column;
+    justify-content: space-between;
 }
 .items__img{
     width: 70px;
