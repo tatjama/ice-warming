@@ -26,12 +26,10 @@ let buttonsDOM = [];
 class Products {
    async getProducts() {
        try {
-        console.log("data")
            // This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
           let contentful = await client.getEntries({
               content_type: 'iceWarmingProducts'
           });
-          console.log(contentful);
           //console.log(contentful)
             //LOCAL JSON CALL for products
            /* let result = await fetch('../products.json');
@@ -56,7 +54,6 @@ class Products {
 class UI{
     displayProducts(products){
         let result = "";
-        console.log("products")
         products.forEach(product => {
            result +=`
             <!--single product-->
@@ -116,7 +113,6 @@ class UI{
         cartItems.innerText = itemsTotal;
     }
     addCartItem(item){
-        console.log(item)
         const div = document.createElement("div");
         div.classList.add('cart-item');
         div.innerHTML = `<img src=${item.image} alt="product"/>
@@ -140,7 +136,6 @@ class UI{
         //cartDOM.style.transform = 'translate(0%)';
     }
     setupApp(){
-        console.log("setupApp");
         cart = Storage.getCart();
         this.setCartValues(cart);
         this.populateCart(cart);
@@ -232,7 +227,6 @@ class Storage{
     }
     static getProducts(id){
        let products = JSON.parse(localStorage.getItem("products"));
-       console.log(products);
        let product = products.find((item) => {
             return item.id === id
        })
@@ -247,11 +241,8 @@ class Storage{
 }
 
 document.addEventListener("DOMContentLoaded",() => {
-    console.log("DOM")
     const ui = new UI();
-    console.log(ui)
     const products = new Products();
-    console.log(products)
     ui.setupApp();
     //getting all Products
     products.getProducts().then((products) => {
