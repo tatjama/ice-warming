@@ -846,9 +846,21 @@ a.e-shop__button:hover{
 .menu{
     height: 180px;
 }
+.e-shop{
+    padding: 25px 0px;
+}
+a.e-shop__button{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 .menu__platforms{
     position: absolute;
-    top: 98px;
+    top: 145px;
     display: flex;
 }
 .menu__platform{
